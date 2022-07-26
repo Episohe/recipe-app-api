@@ -13,6 +13,7 @@ from psycopg2 import OperationalError as Psycopg2OpError
 class CommandTests(SimpleTestCase):
     """Test commands."""
 
+    @staticmethod
     def test_wait_for_db_ready(self, patched_check):
         """Test waiting for database if database ready."""
         patched_check.return_value = True

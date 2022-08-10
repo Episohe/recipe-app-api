@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'core',
     'user',
     'rest_framework',
+    'rest-framework.authtoken'
     'drf_spectacular',
 ]
 
